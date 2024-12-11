@@ -1,3 +1,6 @@
+Github Repo Link : (https://github.com/RHRumon/Cricket-my-squad11-project)
+Live Link on netlify: (https://cricket-sqaud-11.netlify.app/)
+
 # Cricket-my-squad11-project
 
 ## Description
