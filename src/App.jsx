@@ -60,13 +60,14 @@ function App() {
             <a href=""><li className="before:content-['•']"> Contact</li></a>
           </ul>
         </div>
-        <div className='flex flex-col gap-3'>
+        <div className='flex flex-col gap-3 '>
           <p className='text-lg'>Subscribe</p>
           <p className='text-base text-gray-400'>Subscribe to our newsletter for the latest updates.</p>
 
-          <div className='flex'>
-          <input className='rounded-l-md px-3 py-2' type="email" placeholder='Enter your email' />
-          <button className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white py-2 px-3 rounded-r-md">Subscribe</button>
+          <div className='md:flex'>
+          <input className='md:rounded-l-md md:rounded-r-none rounded-md px-3 py-2' type="email" placeholder='Enter your email' />
+
+          <button className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white py-2 px-3 md:rounded-r-md md:rounded-l-none rounded-md">Subscribe</button>
           </div>
         </div>
       </div>

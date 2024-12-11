@@ -1,21 +1,28 @@
 import logo from "../../assets/logo.png";
 import bannerLogo from "../../assets/banner-main.png";
-// import { BsCoin } from "react-icons/bs";
 import PropTypes from "prop-types";
+import { FaHamburger } from "react-icons/fa";
+import dollar from "../../assets/DoubleDollar.png"
 
 const Header = ({ handleAddCoins, coins }) => {
   return (
     <>
-      <div className="flex justify-between items-center max-w-7xl p-4 mx-auto fixed top-0 w-full bg-white z-50 ">
+      <div className="flex md:gap-14 gap-[5rem] md:justify-between items-center max-w-7xl p-4 mx-auto fixed top-0 w-full bg-white z-50 ">
         <img className="" src={logo}></img>
         <div className="flex gap-5 items-center">
+          <div className="md:block hidden">
+          <div className="flex gap-5 items-center ">
           <h1>Home</h1>
           <h1>Fixture</h1>
           <h1>Team</h1>
           <h1>Schedules</h1>
-
-          <div className="font-bold border rounded-md px-2 py-2">
-            <p className=""> {coins} Coins</p>
+          </div>
+          </div>
+          <FaHamburger className="md:hidden"/>
+          <div className="font-bold border rounded-md px-2 py-2 flex gap-2 items-center whitespace-pre">
+            <p className="truncate text-xs sm:text-sm"> {coins} Coins</p>
+            
+            <img src={dollar} alt="" />
           </div>
         </div>
       </div>
