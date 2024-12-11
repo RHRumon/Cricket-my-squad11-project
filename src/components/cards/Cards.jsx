@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Card from "../card/Card";
 import SelectedCard from "../cards/SelectedCard";
 import PropTypes from "prop-types";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cards = ({coins, handleAddCoins}) => {
   const [players, setPlayers] = useState([]); // All players
@@ -19,7 +21,7 @@ const Cards = ({coins, handleAddCoins}) => {
   const handleChoosePlayer = (player) => {
 
     if(selectedPlayers.length >= 6){
-        alert('Squad Full');
+      toast('Squad Full');
         return;
       }
 
@@ -29,9 +31,12 @@ const Cards = ({coins, handleAddCoins}) => {
             handleAddCoins(coins - player.price);
         }
         else{
-            alert("Not Enough Money");
+          toast("Not Enough Money");
         }
         
+      }
+      else{
+        toast('player already selected');
       }
       
     };
@@ -95,6 +100,7 @@ const Cards = ({coins, handleAddCoins}) => {
         />
         </div>
       )}
+      <ToastContainer />
     </div>
   );
 };

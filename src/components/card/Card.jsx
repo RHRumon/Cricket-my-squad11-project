@@ -3,7 +3,7 @@ import { FaUserAlt } from "react-icons/fa";
 import { IoFlag } from "react-icons/io5";
 
 const Card = ({ player, handleChoosePlayer }) => {
-  const { playerId, name, image, country, role, battingType, bowlingType, price } = player;
+  const { name, image, country, role, battingType, bowlingType, price } = player;
   // console.log(player);
   
   return (

@@ -37,7 +37,7 @@ function App() {
      <div className="relative w-full bg-indigo-950 text-black">
 
       <div className="absolute top-[-200px] left-1/2 transform -translate-x-1/2 z-50 w-full max-w-6xl mx-auto">
-       <Subscribe></Subscribe>
+        <Subscribe></Subscribe>
       </div>
 
      <footer className="relative text-white">
